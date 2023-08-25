@@ -1,9 +1,10 @@
+import HomeComponent from '@/components/Home'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-      <div>
-        <h1>Hello Next JS</h1>
-      </div>
+    <div>
+      <HomeComponent />
+    </div>
   )
 }
