@@ -21,8 +21,9 @@ export default function Header() {
         <nav className='flex justify-between items-center'>
             <Link href={"/"}>Github Login</Link>
             <div className='space-x-6'>
-                <button onClick={() => signIn('github')} className='px-6 py-2 mt-4 text-white bg-black rounded-lg hover:bg-blue-900'>Github</button>
-                <button onClick={() => signIn('google')} className='px-6 py-2 mt-4 text-white bg-blue-500 rounded-lg hover:bg-blue-900'>Google</button>
+                <button onClick={() => signIn('github')} className='px-6 py-2 mt-4 text-white bg-slate-800 rounded-lg hover:bg-slate-900'>Github</button>
+                <button onClick={() => signIn('google')} className='px-6 py-2 mt-4 text-white bg-blue-500 rounded-lg 
+                hover:bg-blue-900'>Google</button>
             </div>
         </nav>
     </div>

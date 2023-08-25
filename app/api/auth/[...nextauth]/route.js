@@ -1,6 +1,7 @@
 import NextAuth from "next-auth/next";
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
+import FaceboookProvider from "next-auth/providers/facebook"
 
 const handler = NextAuth({
     providers: [
@@ -11,7 +12,7 @@ const handler = NextAuth({
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        })
+        }),
     ]
 })
 
